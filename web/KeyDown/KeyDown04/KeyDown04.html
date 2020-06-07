@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>盲打练习</title>
+
+<style type="text/css">
+	body{ background-repeat: no-repeat;background-size: cover;background-image: url("004.jpg")}
+	textarea{ display:block;width:880px; height: 100px; margin: 50px auto; font-size: 16px; color:#fff; background: #555;}
+	.keyboard{ width:908px; margin: 50px auto;}
+    .quit{
+        width:130px;
+        height:100px;
+        background:red;
+        position:absolute;bottom:20px;left:50px;
+        text-align:center;
+        cursor: pointer;
+        background:url("002.png");
+        background-size:auto;
+        background-repeat: no-repeat;
+        line-height:50px;
+        color:#392112;
+        font-size:16px;
+        z-index:6666666;
+        font-weight:bold;
+    }
+</style>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/keyboard.min.js"></script>
+
+</head>
+<body><script src="/demos/googlegg.js"></script>
+
+<textarea placeholder=" 请在这里输入英文！！！"></textarea>
+
+<div class="keyboard"></div>
+
+
+<script type="text/javascript">
+	$('textarea').focus();
+	$('.keyboard').keyboard({audio:'music/keydown.mp3'});
+    function turntomain0() {
+        window.location.href='../../Main1.jsp';
+    }
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#ffffff">
+</div>
+</div>
+<div class="quit" onclick="
+
+
+turntomain0()"></div>
+</body>
+</html>
